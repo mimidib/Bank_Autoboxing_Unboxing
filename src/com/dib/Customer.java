@@ -1,6 +1,5 @@
 package com.dib;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Customer {
@@ -17,8 +16,6 @@ public class Customer {
     public void addTransaction(double amount){
         System.out.println("Customer.addTransaction()-> Requested transaction amount: " + amount);
         this.transactions.add(amount);
-
-
     }
 
     public String getName() {

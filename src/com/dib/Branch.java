@@ -28,7 +28,7 @@ public class Branch {
             System.out.println("Branch.newCustomer()-> Successfully added new customer " + customerName + " to branch " + getBranchName());
             return true;
         }
-        System.out.println("Branch.newCustomer()-> Adding new customer " + customerName + "failed due to duplicate name.");
+        System.out.println("Branch.newCustomer()-> Adding new customer " + customerName + " failed due to duplicate name");
         return false;
     }
     //add additional transactions for a customer in a branch
@@ -46,7 +46,7 @@ public class Branch {
     private Customer findCustomer(String customerName){
         //give name, query list of customers for name and retrieve the index and the customer obj
         for(int i=0; i<customers.size();i++){
-            //if given name matches a customers name at i index(cant retrieve obj twice in if condition and block
+            //if given name matches a customers name at i index(can't retrieve obj twice in if condition and block
             Customer checkedCustomer = customers.get(i); //checkedCustomer is a ref to the obj, not a new init of obj
             if(checkedCustomer.getName().equals(customerName)){//same as customerName.equals(customers.get(i).getName());
                 return checkedCustomer;
